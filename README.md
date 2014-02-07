@@ -1,3 +1,10 @@
+#[ROSS Js is ON!!!]
+Welcome to the Javascript classes
+
+Exercise 1 level Intermediate
+edit /js/ross_training 1.js
+
+
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,
