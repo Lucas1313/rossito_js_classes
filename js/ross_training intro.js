@@ -5,11 +5,7 @@
  * @author Ross and Luc
  * @version 1.0
  *
- * Instructions: Replace all ...? by the appropriate values
- * Goal :
- * a) Listen to button click using a class
- * b) get the ID of the button that is clicked
- * c) Get the data-customtext of the button that is clicked
+ * Instructions:  Trigger a body event called customEvent
  *
  */
 var pageEventsManager = (function()(){
@@ -43,10 +39,19 @@ var pageEventsManager = (function()(){
         );
     }
 
+    function privateTriggerCustomEvent{
+        //  ROSS THIS IS WHERE YOU TRIGGER THE CUSTOM EVENT
+    }
+
+
     /** public**/
     return {
         'initListeners':function(){
             privateInitListeners()
+        },
+        triggerCustomEvent : function(){
+
+            privateTriggerCustomEvent()
         }
     }
 })()
@@ -58,6 +63,7 @@ var pageEventsManager = (function()(){
  * doc ready
  */
 $(document).ready(function(){
-    pageEventsManager. ...?;
-    globalEventsManager. ...?
+
+    pageEventsManager.initListeners();
+    // Trigger customEvent
 });
