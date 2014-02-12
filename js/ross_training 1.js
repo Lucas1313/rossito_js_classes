@@ -26,11 +26,13 @@ var pageEventsManager = (function()(){
     function privateInitListeners(){
 
         // add a listener for the button class
-        $('body').on(...?, ...? , function(e){
+        /*
+          $('body').on(...?, ...? , function(e){
 
             // handle the action
             ...?
         }
+        */
     }
 
     /**
@@ -40,14 +42,16 @@ var pageEventsManager = (function()(){
     function handleButtonClick(e){
 
         // get the id of the button
-        var eventTarget = ...?;
+        var eventTarget = '...?';
 
         // saves the button id and inner html
-        clickedButtons.eventTargets. ...? = ...?
+        clickedButtons.eventTargets//. ...? = ...?
 
         // dispatch event to the body
         // Pass some custom text to the event using a Key Value
-        $('body').trigger( ...?, {...?, ...?});
+        /*
+         *   $('body').trigger( ...?, {...?, ...?});
+         */
     }
 
     /** public**/
@@ -82,11 +86,13 @@ var globalEventsManager = (function()(){
     function privateInitListeners(){
 
         // add a listener to the body
+        /*
         $('body').on(...?, ...? , function(e, args){
 
             // handle the action
             ...?
         }
+        */
     }
 
     /**
@@ -96,13 +102,13 @@ var globalEventsManager = (function()(){
     function handleEvent(e, args){
 
         // get the id of the button
-        var eventTarget = ...?;
+        var eventTarget = '...?';
 
         // saves the button id and inner html
-        globalEvents.eventTargets. ...? = ...?
+        globalEvents.eventTargets //. ...? = ...?
 
         // list all events
-        ...?
+        //...?
     }
 
     /**
@@ -119,7 +125,7 @@ var globalEventsManager = (function()(){
         for(var someEvent in globalEvents){
 
             // format the text for html purpose
-            feedbackText += ...?;
+            feedbackText += '...?';
 
         }
         // feedback into a div
@@ -134,11 +140,13 @@ var globalEventsManager = (function()(){
     }
 })()
 
+alert('congratulation you are ready to get to level 1')
+
 /**
  * @method Listener
  * doc ready
  */
 $(document).ready(function(){
-    pageEventsManager. ...?;
-    globalEventsManager. ...?
+    pageEventsManager // . ...?;
+    globalEventsManager// . ...?
 });
